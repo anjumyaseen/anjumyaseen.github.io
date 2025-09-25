@@ -1,193 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anjum Yaseen | DevOps · AI Automation · Release Engineering</title>
-  <meta name="description" content="Portfolio of Anjum Yaseen — DevOps & Release Engineering leader building AI/RAG assistants, automation, and SMB IT solutions." />
-  <meta property="og:title" content="Anjum Yaseen — Portfolio" />
-  <meta property="og:description" content="DevOps, AI/RAG automation, and SMB IT solutions." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://anjumyaseen.github.io/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <script defer src="assets/js/main.js"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Anjum Yaseen",
-    "url": "https://anjumyaseen.github.io",
-    "jobTitle": "DevOps & Release Engineering | AI & Automation",
-    "sameAs": [
-      "https://www.linkedin.com/in/anjumyaseen/",
-      "https://github.com/anjumyaseen",
-      "https://www.fawzixai.com",
-      "https://www.cloudhireit.com"
-    ]
-  }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anjum Yaseen – Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top">
-        <img src="assets/img/avatar.svg" alt="AY logo" class="brand-logo" />
-        <span>Anjum Yaseen</span>
-      </a>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <button id="themeToggle" aria-label="Toggle dark mode">☾</button>
-      </nav>
+  <header class="hero">
+    <img src="assets/img/avatar.svg" alt="AY Logo" class="logo"/>
+    <h1>Anjum Yaseen</h1>
+    <p>AI | DevOps | Release Engineering</p>
+    <div class="social-links">
+      <a href="https://github.com/anjumyaseen" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/anjum-yaseen-85213820/" target="_blank">LinkedIn</a>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero container">
-      <p class="eyebrow">DevOps · AI/RAG · SMB IT</p>
-      <h1>Builder of practical automations and helpful AI assistants.</h1>
-      <p class="lead">
-        I ship low‑friction systems that remove toil: CI/CD, cloud cost wins, RAG copilots,
-        and small-business tech that just works.
+  <main>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a founder-minded builder with 15+ years of experience across DevOps, cloud, and enterprise release engineering.  
+        Recently, I’ve been leading <strong>Fawzix AI Solutions</strong>, helping SMBs adopt AI securely with governed LLM/RAG assistants, agentic workflows, and automation frameworks.  
+        My passion lies in connecting strategy to delivery: architecting scalable platforms, securing cloud infrastructure, and shipping AI products that solve real business problems.
       </p>
-      <div class="cta">
-        <a class="btn primary" href="#projects">See Projects</a>
-        <a class="btn" href="mailto:anjum.yaseen@gmail.com">Get in Touch</a>
-      </div>
-      <ul class="quickfacts">
-        <li>Based in Cary, NC</li>
-        <li>15+ yrs DevOps/Release Eng</li>
-        <li>Founder @ Fawzix AI Solutions · Cloud Hire IT</li>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <strong>Founder & Head of AI Platform – Fawzix AI Solutions</strong> (2024–Present)  
+          <p>Advising SMBs on AI adoption, building secure RAG assistants, designing AI governance frameworks, and turning bespoke client work into reusable SaaS modules.</p>
+        </li>
+        <li>
+          <strong>Sr. DevOps Engineer – Cisco</strong> (2023–2024)  
+          <p>Led compliance automation across AWS/GCP using Ansible & Python, streamlined CI/CD pipelines, and improved audit readiness.</p>
+        </li>
+        <li>
+          <strong>Sr. Release Engineer – Gradient AI</strong> (2022–2023)  
+          <p>Automated AWS EC2/RDS backups with Lambda, improved security with Keycloak/Okta, and deployed SonarQube for CI/CD quality gates.</p>
+        </li>
+        <li>
+          <strong>Release Manager – MetLife</strong> (2022)  
+          <p>Implemented Agile release practices with Azure Boards, reducing release issues by 30%.</p>
+        </li>
+        <li>
+          <strong>Sr. Release Engineer – HCL Software Products</strong> (2019–2022)  
+          <p>Automated deployments, built monitoring solutions, and optimized CI/CD pipelines for faster and more reliable releases.</p>
+        </li>
       </ul>
     </section>
 
-    <section id="projects" class="container section">
-      <h2>Featured Projects</h2>
-      <div class="grid cards">
-        <article class="card">
-          <div class="card-top">
-            <h3>Password Safe (Desktop)</h3>
-            <span class="tag">Python · AES‑GCM</span>
-          </div>
-          <p>Local, offline password manager. Open‑source, no cloud, fast and simple.</p>
-          <ul>
-            <li>Open‑source (MIT), packaged via PyInstaller</li>
-            <li>No telemetry; your data stays local</li>
-          </ul>
-          <div class="card-actions">
-            <a class="btn small" href="https://github.com/anjumyaseen/password_safe" target="_blank" rel="noreferrer">Source</a>
-            <a class="btn small" href="https://github.com/anjumyaseen/password_safe/releases" target="_blank" rel="noreferrer">Download</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <h3>RAG vs Simple Chatbot</h3>
-            <span class="tag">Streamlit · pgvector</span>
-          </div>
-          <p>Side‑by‑side demo comparing a plain chatbot to a RAG pipeline on the same questions.</p>
-          <ul>
-            <li>OpenAI or local via Ollama</li>
-            <li>Tiny eval set; adjustable chunking/retrieval</li>
-          </ul>
-          <div class="card-actions">
-            <a class="btn small" href="https://github.com/anjumyaseen/rag-vs-simple" target="_blank" rel="noreferrer">Repo</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <h3>Invoice Reminder Tool</h3>
-            <span class="tag">Airtable · Make · PHP</span>
-          </div>
-          <p>Multi‑tenant reminders with Stripe/PayPal links, login/register, and MySQL backend.</p>
-          <ul>
-            <li>App shell at app.fawzixai.com</li>
-            <li>Automated dunning emails & analytics</li>
-          </ul>
-          <div class="card-actions">
-            <a class="btn small" href="https://www.fawzixai.com" target="_blank" rel="noreferrer">Site</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <h3>AI LinkedIn Post Agent</h3>
-            <span class="tag">n8n · Telegram · Postgres</span>
-          </div>
-          <p>Agentic workflow for drafting, approving, and publishing social posts across channels.</p>
-          <ul>
-            <li>Central “workspace” with approvals</li>
-            <li>Buffer/LinkedIn integration options</li>
-          </ul>
-          <div class="card-actions">
-            <a class="btn small" href="https://www.fawzixai.com" target="_blank" rel="noreferrer">Learn More</a>
-          </div>
-        </article>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>RAG Knowledge Assistant (MVP)</h3>
+        <p>Built tenant-aware retrieval with approval gates, vector search, and evaluation harness. Deployable on lean infra for SMBs.</p>
+      </div>
+      <div class="project">
+        <h3>Password Safe (Open Source)</h3>
+        <p>Python/PyQt desktop app with AES-GCM encryption, packaged with PyInstaller for offline use.  
+        <a href="https://github.com/anjumyaseen/password_safe" target="_blank">View on GitHub</a></p>
+      </div>
+      <div class="project">
+        <h3>Compliance Automation</h3>
+        <p>Automated evidence collection and audit artifacts integrated into CI/CD, transforming audits from reactive to routine.</p>
       </div>
     </section>
 
-    <section id="experience" class="container section">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="item">
-          <h3>DevOps & Release Engineering (Enterprise)</h3>
-          <p class="where">Cisco · MetLife · HCL Software</p>
-          <ul>
-            <li>Automated compliance with Ansible/Python, reducing checks from days to hours</li>
-            <li>Hardened CI/CD, artifact management, and cloud backup automation</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3>Founder & Builder</h3>
-          <p class="where">Fawzix AI Solutions · Cloud Hire IT</p>
-          <ul>
-            <li>Productized RAG copilots and SMB tools with quick ROI</li>
-            <li>IT setup services for small businesses</li>
-          </ul>
-        </div>
-      </div>
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>AI Platforms: LLM/RAG, MLOps, governance, evaluation</li>
+        <li>DevOps: AWS, Jenkins, Ansible, Terraform (learning), Kubernetes (learning)</li>
+        <li>Programming: Python, Bash/Shell scripting</li>
+        <li>Security: CIS/DISA STIG, Okta, Keycloak</li>
+        <li>Cloud: AWS (EC2, RDS, S3, Lambda, CloudFront), GCP</li>
+        <li>Tools: Docker, Postgres, n8n/Make, Streamlit, FastAPI</li>
+      </ul>
     </section>
 
-    <section id="skills" class="container section">
-      <h2>Skills & Tools</h2>
-      <div class="grid skills">
-        <div>
-          <h4>DevOps & Cloud</h4>
-          <p>AWS (EC2, S3, RDS, Lambda), Docker, Jenkins, GitHub Actions, Caddy, Ansible</p>
-        </div>
-        <div>
-          <h4>AI & Data</h4>
-          <p>RAG, embeddings, Streamlit, pgvector, Python (FastAPI), Ollama/OpenAI</p>
-        </div>
-        <div>
-          <h4>Apps & Web</h4>
-          <p>React/Next.js, Tailwind, Node.js, Postgres, n8n/Make, Telegram bots</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="container section">
+    <!-- CONTACT -->
+    <section id="contact">
       <h2>Contact</h2>
-      <p>Open to collaborations, consulting, and interesting problems.</p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:anjum.yaseen@gmail.com">Email Me</a>
-        <a class="btn" href="https://www.linkedin.com/in/anjumyaseen/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="btn" href="https://github.com/anjumyaseen" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
+      <p>Email: <a href="mailto:anjumyaseen@yahoo.com">anjumyaseen@yahoo.com</a></p>
+      <p>Location: Cary, NC</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Anjum Yaseen • Built for GitHub Pages</p>
-    </div>
+  <footer>
+    <p>© <span id="year"></span> Anjum Yaseen – Fawzix AI Solutions</p>
   </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
