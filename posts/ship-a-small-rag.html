@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>How I ship a tiny RAG for an SMB (without drama) — Anjum Yaseen</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="article">
+  <main class="container article-wrap">
+    <a class="back" href="../index.html#writing">← Back</a>
+    <h1>How I ship a tiny RAG for an SMB (without drama)</h1>
+    <p class="muted">The smallest thing that works, then earn the next step.</p>
+
+    <h2>1) Map the data</h2>
+    <p>Where is it, who owns it, what’s private/PII, and how often does it change? You can’t skip this.</p>
+
+    <h2>2) Retrieval before prompts</h2>
+    <p>Chunking + embeddings + metadata filters. Pick a vector store you can actually run (pgvector is great).</p>
+
+    <h2>3) One guarded workflow</h2>
+    <p>Start with a single task the team cares about. Add an approval step and log everything.</p>
+
+    <h2>4) Honest evaluation</h2>
+    <p>Keep a tiny eval set. Track answer quality and cost. If it’s not better than “Ctrl+F,” fix retrieval.</p>
+
+    <h2>5) Ship, then simplify</h2>
+    <p>Remove knobs nobody uses. Automate ingestion. Only add features when the last one is clearly working.</p>
+
+    <p class="muted">Tools I like: FastAPI, Streamlit, Postgres/pgvector, Docker, Ollama/OpenAI.</p>
+  </main>
+</body>
+</html>

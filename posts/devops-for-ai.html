@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DevOps for AI apps: a short checklist — Anjum Yaseen</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="article">
+  <main class="container article-wrap">
+    <a class="back" href="../index.html#writing">← Back</a>
+    <h1>DevOps for AI apps: a short checklist</h1>
+
+    <ul>
+      <li><strong>Secrets:</strong> never in code; use env + secret manager.</li>
+      <li><strong>Data paths:</strong> log what the model saw; tag PII; redact where needed.</li>
+      <li><strong>Eval set:</strong> keep it small but real; run it on every change.</li>
+      <li><strong>Rollouts:</strong> flags for model, prompt, and retriever; one click to roll back.</li>
+      <li><strong>Observability:</strong> traces with latency, tokens, retrieval hits/misses, and feedback.</li>
+      <li><strong>Cost:</strong> per-request budgets; alerts if you cross thresholds.</li>
+    </ul>
+
+    <p class="muted">If you can’t see it and roll it back in minutes, it’s not ready.</p>
+  </main>
+</body>
+</html>

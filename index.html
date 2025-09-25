@@ -3,172 +3,227 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Fawzix AI — Anjum Yaseen</title>
-  <meta name="description" content="Fawzix AI Solutions — AI platform & DevOps consulting by Anjum Yaseen. Governed LLM/RAG assistants, automation, and secure cloud." />
+  <title>Anjum Yaseen — Personal Site</title>
+  <meta name="description" content="Anjum Yaseen — AI & DevOps builder. Personal portfolio highlighting RAG work, Password Safe, Invoice Reminder, and writing." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/img/avatar.svg">
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
 
-  <!-- Top Nav -->
-  <header class="nav">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home">
-        <img src="assets/img/avatar.svg" alt="AY" class="brand-logo">
-        <span class="brand-text">Fawzix AI</span>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="#top">
+        <img src="assets/img/avatar.svg" alt="AY" class="brand-logo" />
+        <span class="brand-text">Anjum Yaseen</span>
       </a>
-      <nav class="nav-links">
-        <a href="#services">Services</a>
+      <nav class="nav">
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-dark" href="#book">Book now</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="btn btn-primary">Say hi</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="container hero-inner">
-      <h1 class="display">Innovative AI & DevOps Solutions<br/>for Tomorrow</h1>
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="portrait">
+        <!-- Replace with your image -->
+        <div class="portrait-img" title="Your photo"></div>
+      </div>
+      <div class="intro">
+        <h1 class="display">Hi, I’m Anjum.</h1>
+        <p class="lead">
+          I build practical AI things for humans—mostly <strong>RAG</strong> assistants and
+          small, useful tools—on top of well-behaved DevOps foundations.
+        </p>
+        <div class="links">
+          <a class="btn btn-primary" href="#projects">See my work</a>
+          <a class="btn btn-ghost" target="_blank" href="https://github.com/anjumyaseen">GitHub</a>
+          <a class="btn btn-ghost" target="_blank" href="https://www.linkedin.com/in/anjum-yaseen-85213820/">LinkedIn</a>
+        </div>
+      </div>
     </div>
-    <!-- Replace the image below with your own hero (1200×600+). -->
-    <div class="hero-img" role="img" aria-label="Product hero image"></div>
   </section>
 
-  <!-- SERVICES / BOOKING -->
-  <section id="book" class="section">
-    <div class="container grid-2">
+  <!-- About Me -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About me</h2>
+      <p class="about long">
+        I’m a builder at heart. For 15+ years I’ve lived in DevOps and release engineering—shipping
+        things reliably, automating the boring parts, and keeping production calm. These days my focus
+        is helping small teams adopt AI safely and cheaply: <strong>RAG</strong> over their own docs,
+        lightweight guardrails, human-in-the-loop approvals, and simple dashboards so people actually
+        trust what we deploy. I like projects that start small and prove value quickly. Most of my work
+        happens in Python (FastAPI/Streamlit), Postgres/pgvector, and Docker, stitched together with
+        IaC and CI/CD so it’s repeatable. When I’m not shipping something, I’m probably simplifying it.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="grid-3">
+        <article class="card">
+          <header class="card-head">
+            <h3>RAG vs Simple</h3>
+          </header>
+          <p>
+            A small playground to compare a plain LLM chat vs a retrieval-augmented chat
+            over your own knowledge base. Switch between OpenAI and Ollama locally.
+          </p>
+          <div class="tags">
+            <span>RAG</span><span>FastAPI</span><span>Streamlit</span><span>pgvector</span>
+          </div>
+          <a class="btn btn-secondary" target="_blank" href="https://github.com/anjumyaseen/rag-vs-simple">GitHub repo</a>
+        </article>
+
+        <article class="card">
+          <header class="card-head">
+            <h3>Password Safe</h3>
+          </header>
+          <p>
+            Local-first password manager (Python + PyQt) with AES-GCM encryption. Packaged
+            with PyInstaller—no cloud, your data stays on your machine.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>PyQt</span><span>Security</span>
+          </div>
+          <a class="btn btn-secondary" target="_blank" href="https://github.com/anjumyaseen/password_safe">GitHub repo</a>
+        </article>
+
+        <article class="card">
+          <header class="card-head">
+            <h3>Invoice Reminder</h3>
+          </header>
+          <p>
+            A tiny, opinionated tool that nudges clients to pay on time. Multi-tenant, simple
+            emails, and just enough tracking for solo founders and SMBs.
+          </p>
+          <div class="tags">
+            <span>Web App</span><span>Automation</span>
+          </div>
+          <a class="btn btn-secondary" target="_blank" href="https://app.fawzixai.com">app.fawzixai.com</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section id="writing" class="section">
+    <div class="container">
+      <h2>Writing</h2>
+      <p class="muted">Notes on building calm AI systems, small pilots, and DevOps that doesn’t fight you.</p>
+
+      <div class="grid-3">
+        <article class="card">
+          <header class="card-head">
+            <h3><a class="post-link" href="posts/ship-a-small-rag.html">How I ship a tiny RAG for an SMB (without drama)</a></h3>
+          </header>
+          <p>Data map → retrieval plan → one guarded workflow → honest evals. The smallest thing that works.</p>
+          <div class="tags"><span>RAG</span><span>Playbook</span></div>
+          <a class="btn btn-secondary" href="posts/ship-a-small-rag.html">Read</a>
+        </article>
+
+        <article class="card">
+          <header class="card-head">
+            <h3><a class="post-link" href="posts/devops-for-ai.html">DevOps for AI apps: a short checklist</a></h3>
+          </header>
+          <p>Secrets, eval sets, rollout toggles, and the few logs that actually matter when LLMs misbehave.</p>
+          <div class="tags"><span>DevOps</span><span>LLM</span></div>
+          <a class="btn btn-secondary" href="posts/devops-for-ai.html">Read</a>
+        </article>
+
+        <article class="card">
+          <header class="card-head">
+            <h3>More soon</h3>
+          </header>
+          <p>Adding short write-ups as I ship things. If you like this style, say hi.</p>
+          <div class="tags"><span>Notes</span></div>
+          <a class="btn btn-secondary" href="#contact">Get updates</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="time-card">
+          <div class="time-head">
+            <strong>Founder — Fawzix AI Solutions</strong>
+            <span class="meta">2024 — Present</span>
+          </div>
+          <p class="muted">
+            I help SMBs add AI the boring way: map data, define guardrails, ship a tiny pilot, measure,
+            then earn the next feature.
+          </p>
+        </div>
+
+        <div class="time-card">
+          <div class="time-head">
+            <strong>Sr. DevOps Engineer — Cisco</strong>
+            <span class="meta">2023 — 2024</span>
+          </div>
+          <p class="muted">Compliance automation across AWS/GCP; owned CI/CD; made audits less dramatic.</p>
+        </div>
+
+        <div class="time-card">
+          <div class="time-head">
+            <strong>Sr. Release Engineer — Gradient AI</strong>
+            <span class="meta">2022 — 2023</span>
+          </div>
+          <p class="muted">Automated backups with Lambda; rolled in SonarQube; tightened identity with Okta/Keycloak.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container contact">
       <div>
-        <h2 class="serif">Schedule your appointment</h2>
-        <p class="muted">
-          Book time to explore how governed LLM/RAG assistants and pragmatic automation can unlock value
-          for your team. We keep it lean, secure, and outcome-driven.
-        </p>
-        <!-- Optional supporting image -->
-        <div class="photo"></div>
-      </div>
-
-      <div id="services" class="booking card">
-        <div class="booking-row">
-          <div>
-            <div class="title">Free Consultation</div>
-            <div class="sub">30 minutes</div>
-          </div>
-          <button class="btn btn-outline" data-book="free">Book</button>
+        <h2>Get in touch</h2>
+        <p class="muted">Quickest reply via email. Happy to chat about small pilots and tidy automations.</p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:anjumyaseen@yahoo.com">Email me</a>
+          <a class="btn btn-ghost" target="_blank" href="https://github.com/anjumyaseen">GitHub</a>
+          <a class="btn btn-ghost" target="_blank" href="https://www.linkedin.com/in/anjum-yaseen-85213820/">LinkedIn</a>
         </div>
-
-        <div class="booking-row">
-          <div>
-            <div class="title">AI Readiness & Roadmap</div>
-            <div class="sub">1 hour @ $99</div>
-          </div>
-          <button class="btn btn-outline" data-book="basic">Book</button>
+      </div>
+      <div class="contact-card card">
+        <div class="mini">
+          <div class="mini-title">Based in</div>
+          <div class="mini-item">Cary, NC</div>
         </div>
-
-        <div class="booking-row">
-          <div>
-            <div class="title">RAG/Agentic Pilot Scoping</div>
-            <div class="sub">1 hour @ $199</div>
-          </div>
-          <button class="btn btn-outline" data-book="advanced">Book</button>
+        <div class="mini">
+          <div class="mini-title">Focus</div>
+          <div class="mini-item">RAG • Agents • DevOps</div>
         </div>
-
-        <div class="powered">Powered by simple scheduling</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT SPLIT -->
-  <section id="about" class="section split">
-    <div class="container split-wrap">
-      <div class="split-media"></div>
-      <div class="split-copy">
-        <h2 class="serif">About Fawzix AI</h2>
-        <p class="muted">
-          Led by <strong>Anjum Yaseen</strong>, Fawzix AI designs and ships governed AI systems:
-          secure data paths, evaluation/approval gates, and cloud automation that teams trust.
-          We turn bespoke work into reusable modules—so every engagement ships faster than the last.
-        </p>
-        <ul class="ticks">
-          <li>LLM/RAG assistants with privacy & guardrails</li>
-          <li>AWS automation, CI/CD, and observability</li>
-          <li>Identity & compliance: Okta, Keycloak, CIS/DISA STIG</li>
-        </ul>
-        <a class="btn btn-dark" href="#contact">Learn more</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOCIAL / GALLERY -->
-  <section class="section gallery">
-    <div class="container">
-      <h2 class="serif center">Follow us on social</h2>
-      <div class="grid-4">
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-      </div>
-      <div class="center">
-        <a class="btn btn-outline" target="_blank" href="https://www.linkedin.com/in/anjum-yaseen-85213820/">Social</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="serif">Contact Us</h2>
-      <div class="contact-grid card">
-        <form id="contactForm" action="https://formspree.io/f/your-id" method="POST">
-          <div class="row">
-            <div class="field">
-              <label>First Name<span class="req"> (required)</span></label>
-              <input name="first_name" required placeholder="First name" />
-            </div>
-            <div class="field">
-              <label>Last Name</label>
-              <input name="last_name" placeholder="Last name" />
-            </div>
-          </div>
-          <div class="field">
-            <label>Email<span class="req"> (required)</span></label>
-            <input type="email" name="email" required placeholder="name@example.com" />
-          </div>
-          <div class="field">
-            <label>Message<span class="req"> (required)</span></label>
-            <textarea name="message" rows="5" required placeholder="Tell us about your project…"></textarea>
-          </div>
-          <button class="btn btn-dark" type="submit">Send</button>
-          <p id="formMsg" class="muted small" role="status" aria-live="polite"></p>
-        </form>
-
-        <div class="contact-aside">
-          <div class="mini-col">
-            <div class="mini-title">Brand</div>
-            <div class="mini-item">Fawzix AI Solutions</div>
-          </div>
-          <div class="mini-col">
-            <div class="mini-title">Location</div>
-            <div class="mini-item">Cary, NC</div>
-          </div>
-          <div class="mini-col">
-            <div class="mini-title">Contact</div>
-            <div class="mini-item"><a href="mailto:anjumyaseen@yahoo.com">anjumyaseen@yahoo.com</a></div>
-            <div class="mini-item"><a target="_blank" href="https://github.com/anjumyaseen">GitHub</a> • <a target="_blank" href="https://www.linkedin.com/in/anjum-yaseen-85213820/">LinkedIn</a></div>
-          </div>
+        <div class="mini">
+          <div class="mini-title">Stack</div>
+          <div class="mini-item">Python · FastAPI · Postgres · Docker</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container foot-wrap">
-      <div class="foot-brand">Fawzix AI</div>
-      <small>© <span id="year"></span> Anjum Yaseen. All rights reserved.</small>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <small>© <span id="year"></span> Anjum Yaseen</small>
+      <a href="#top" class="to-top" aria-label="Back to top">↑</a>
     </div>
   </footer>
 
