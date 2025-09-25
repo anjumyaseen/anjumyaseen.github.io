@@ -1,0 +1,82 @@
+/* Minimal, responsive, dark-mode friendly portfolio styles */
+:root {
+  --bg: #0b0c10;
+  --panel: #12131a;
+  --text: #e9eef2;
+  --muted: #9aa3ad;
+  --brand: #4f46e5;
+  --brand-2: #22d3ee;
+  --border: #1f2230;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background: radial-gradient(1200px 600px at 10% 0%, rgba(79,70,229,.15), transparent 60%),
+              radial-gradient(1200px 600px at 90% 0%, rgba(34,211,238,.15), transparent 60%),
+              var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+.site-header {
+  position: sticky; top: 0; backdrop-filter: blur(10px);
+  background: rgba(11,12,16,0.7); border-bottom: 1px solid var(--border); z-index: 50;
+}
+.site-header .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+.site-header nav a { color: var(--text); text-decoration: none; margin: 0 12px; font-weight: 600; }
+.site-header nav a:hover { color: var(--brand-2); }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 800; letter-spacing:.3px;}
+.brand-logo { width: 28px; height: 28px; }
+#themeToggle { margin-left: 6px; background: var(--panel); border: 1px solid var(--border); color: var(--text); padding: 6px 10px; border-radius: 8px; cursor: pointer; }
+
+.hero { padding: 72px 0 32px; text-align: left; }
+.eyebrow { text-transform: uppercase; letter-spacing: .16em; color: var(--muted); font-size: 12px; margin: 0 0 8px; }
+h1 { font-size: clamp(28px, 5vw, 44px); margin: 8px 0 12px; line-height: 1.1; }
+.lead { font-size: clamp(16px, 2.2vw, 18px); color: #cdd6df; max-width: 800px; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0 12px; }
+.btn {
+  background: transparent; border: 1px solid var(--border); color: var(--text);
+  padding: 10px 16px; border-radius: 10px; text-decoration: none; font-weight: 600; display: inline-flex; align-items:center; gap:8px;
+}
+.btn:hover { border-color: var(--brand-2); transform: translateY(-1px); transition: .15s ease; }
+.btn.primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); border-color: transparent; color: #0b0c10; }
+.btn.small { padding: 8px 12px; font-size: 14px; }
+
+.quickfacts { list-style: none; padding: 0; margin: 12px 0 0; color: var(--muted); display:flex; gap:16px; flex-wrap:wrap; }
+.quickfacts li::before { content: "• "; color: var(--brand-2); }
+
+.section { padding: 48px 0; }
+.section h2 { font-size: 26px; margin-bottom: 16px; }
+
+.grid.cards {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;
+}
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.0));
+  border: 1px solid var(--border); border-radius: 16px; padding: 18px;
+}
+.card-top { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.card h3 { margin: 0; font-size: 18px; }
+.tag { font-size: 12px; color: var(--brand-2); border:1px solid var(--brand-2); padding: 2px 8px; border-radius:999px;}
+.card p { color: #cdd6df; }
+.card ul { padding-left: 18px; margin-top: 6px; color: #d7dee7; }
+.card-actions { display:flex; gap:8px; margin-top: 10px; }
+
+.timeline .item { border-left: 2px solid var(--border); padding-left: 16px; margin: 14px 0; }
+.timeline .item h3 { margin: 0 0 6px; }
+.timeline .item .where { color: var(--muted); margin: 0 0 8px; }
+
+.grid.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.grid.skills h4 { margin: 0 0 6px; }
+
+.site-footer { border-top: 1px solid var(--border); margin-top: 28px; }
+.site-footer .container { padding: 18px 0; text-align: center; color: var(--muted); }
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  .site-header nav a { margin: 0 8px; }
+}
