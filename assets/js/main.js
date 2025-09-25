@@ -1,11 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+// Year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
 
-  const btn = document.getElementById('themeToggle');
-  if (btn) {
-    btn.addEventListener('click', () => {
-      document.documentElement.classList.toggle('light');
+// Add subtle shadow to header on scroll
+const header = document.querySelector('.site-header');
+let ticking = false;
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      header.style.boxShadow = window.scrollY > 6 ? '0 8px 18px rgba(2,6,23,.06)' : 'none';
+      ticking = false;
     });
+    ticking = true;
   }
 });
