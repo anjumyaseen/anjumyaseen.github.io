@@ -3,162 +3,89 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anjum Yaseen — Personal Site</title>
-  <meta name="description" content="Anjum Yaseen — AI & DevOps builder. Personal portfolio highlighting RAG work, Password Safe, Invoice Reminder, and writing." />
+  <title>Anjum Yaseen — Portfolio</title>
+  <meta name="description" content="Portfolio of Anjum Yaseen, AI & DevOps leader focused on practical retrieval systems, automation, and reliable delivery." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/img/avatar.svg">
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body id="top">
 
-  <!-- Header -->
-  <header class="site-header">
+  <header class="site-header" aria-label="Main navigation">
     <div class="container header-wrap">
       <a class="brand" href="#top">
-        <img src="assets/img/avatar.svg" alt="AY" class="brand-logo" />
+        <img src="assets/img/avatar.svg" alt="Anjum Yaseen logo" class="brand-logo" />
         <span class="brand-text">Anjum Yaseen</span>
       </a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#writing">Writing</a>
         <a href="#experience">Experience</a>
-        <a href="#contact" class="btn btn-primary">Say hi</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn btn-primary">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="top">
+  <section class="hero" aria-labelledby="hero-title">
     <div class="container hero-grid">
       <div class="portrait">
-        <!-- Replace with your image -->
-        <div class="portrait-img" title="Your photo"></div>
+        <div class="portrait-img">
+          <img src="assets/img/me.jpg" alt="Portrait of Anjum Yaseen" loading="lazy">
+        </div>
       </div>
       <div class="intro">
-        <h1 class="display">Hi, I’m Anjum.</h1>
+        <span class="eyebrow">AI &amp; DevOps Builder</span>
+        <h1 class="display" id="hero-title">I create dependable AI assistants and the DevOps foundations that support them.</h1>
         <p class="lead">
-          I build practical AI things for humans—mostly <strong>RAG</strong> assistants and
-          small, useful tools—on top of well-behaved DevOps foundations.
+          15+ years delivering calm, resilient infrastructure and data-informed automation. I help companies
+          ship trustworthy retrieval systems, guardrailed workflows, and continuous delivery pipelines that
+          scale with the team.
         </p>
+        <ul class="meta-list">
+          <li>Retrieval-augmented assistants tailored to internal knowledge bases</li>
+          <li>Release engineering, compliance automation, and observability you can act on</li>
+          <li>Lean pilots with clear success metrics before scaling investment</li>
+        </ul>
         <div class="links">
-          <a class="btn btn-primary" href="#projects">See my work</a>
-          <a class="btn btn-ghost" target="_blank" href="https://github.com/anjumyaseen">GitHub</a>
-          <a class="btn btn-ghost" target="_blank" href="https://www.linkedin.com/in/anjum-yaseen-85213820/">LinkedIn</a>
+          <a class="btn btn-primary" href="#projects">Explore projects</a>
+          <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://github.com/anjumyaseen">GitHub</a>
+          <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anjum-yaseen-85213820/">LinkedIn</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Me -->
-  <section id="about" class="section">
+  <section id="about" class="section alt" aria-labelledby="about-title">
     <div class="container">
-      <h2>About me</h2>
+      <h2 id="about-title">About me</h2>
       <p class="about long">
-        I’m a builder at heart. For 15+ years I’ve lived in DevOps and release engineering—shipping
-        things reliably, automating the boring parts, and keeping production calm. These days my focus
-        is helping small teams adopt AI safely and cheaply: <strong>RAG</strong> over their own docs,
-        lightweight guardrails, human-in-the-loop approvals, and simple dashboards so people actually
-        trust what we deploy. I like projects that start small and prove value quickly. Most of my work
-        happens in Python (FastAPI/Streamlit), Postgres/pgvector, and Docker, stitched together with
-        IaC and CI/CD so it’s repeatable. When I’m not shipping something, I’m probably simplifying it.
+        I’m a builder who believes great software is quiet, observable, and shipped in small confident steps.
+        My career started in release engineering and DevOps, hardening CI/CD, automating compliance, and
+        keeping regulated environments auditable. Today I partner with founders and product leaders to bring
+        AI into production responsibly—pairing retrieval over trusted data, human-in-the-loop guardrails, and
+        pragmatic dashboards so teams can measure impact every sprint.
       </p>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section alt">
-    <div class="container">
-      <h2>Projects</h2>
-
-      <div class="grid-3">
-        <article class="card">
-          <header class="card-head">
-            <h3>RAG vs Simple</h3>
-          </header>
-          <p>
-            A small playground to compare a plain LLM chat vs a retrieval-augmented chat
-            over your own knowledge base. Switch between OpenAI and Ollama locally.
-          </p>
-          <div class="tags">
-            <span>RAG</span><span>FastAPI</span><span>Streamlit</span><span>pgvector</span>
-          </div>
-          <a class="btn btn-secondary" target="_blank" href="https://github.com/anjumyaseen/rag-vs-simple">GitHub repo</a>
+      <div class="highlight-grid">
+        <article class="card slim">
+          <span class="highlight-title">Core strengths</span>
+          <p>Platform reliability, infrastructure as code, iterative delivery, and cross-functional coaching.</p>
         </article>
-
-        <article class="card">
-          <header class="card-head">
-            <h3>Password Safe</h3>
-          </header>
-          <p>
-            Local-first password manager (Python + PyQt) with AES-GCM encryption. Packaged
-            with PyInstaller—no cloud, your data stays on your machine.
-          </p>
-          <div class="tags">
-            <span>Python</span><span>PyQt</span><span>Security</span>
-          </div>
-          <a class="btn btn-secondary" target="_blank" href="https://github.com/anjumyaseen/password_safe">GitHub repo</a>
+        <article class="card slim">
+          <span class="highlight-title">Toolkit</span>
+          <p>Python, FastAPI, Streamlit, Postgres + pgvector, Docker, Terraform, AWS, GitHub Actions, Grafana.</p>
         </article>
-
-        <article class="card">
-          <header class="card-head">
-            <h3>Invoice Reminder</h3>
-          </header>
-          <p>
-            A tiny, opinionated tool that nudges clients to pay on time. Multi-tenant, simple
-            emails, and just enough tracking for solo founders and SMBs.
-          </p>
-          <div class="tags">
-            <span>Web App</span><span>Automation</span>
-          </div>
-          <a class="btn btn-secondary" target="_blank" href="https://app.fawzixai.com">app.fawzixai.com</a>
+        <article class="card slim">
+          <span class="highlight-title">Working style</span>
+          <p>Start small, measure everything, document trade-offs, and leave teams with systems they own.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Writing -->
-  <section id="writing" class="section">
+  <section id="experience" class="section" aria-labelledby="experience-title">
     <div class="container">
-      <h2>Writing</h2>
-      <p class="muted">Notes on building calm AI systems, small pilots, and DevOps that doesn’t fight you.</p>
-
-      <div class="grid-3">
-        <article class="card">
-          <header class="card-head">
-            <h3><a class="post-link" href="posts/ship-a-small-rag.html">How I ship a tiny RAG for an SMB (without drama)</a></h3>
-          </header>
-          <p>Data map → retrieval plan → one guarded workflow → honest evals. The smallest thing that works.</p>
-          <div class="tags"><span>RAG</span><span>Playbook</span></div>
-          <a class="btn btn-secondary" href="posts/ship-a-small-rag.html">Read</a>
-        </article>
-
-        <article class="card">
-          <header class="card-head">
-            <h3><a class="post-link" href="posts/devops-for-ai.html">DevOps for AI apps: a short checklist</a></h3>
-          </header>
-          <p>Secrets, eval sets, rollout toggles, and the few logs that actually matter when LLMs misbehave.</p>
-          <div class="tags"><span>DevOps</span><span>LLM</span></div>
-          <a class="btn btn-secondary" href="posts/devops-for-ai.html">Read</a>
-        </article>
-
-        <article class="card">
-          <header class="card-head">
-            <h3>More soon</h3>
-          </header>
-          <p>Adding short write-ups as I ship things. If you like this style, say hi.</p>
-          <div class="tags"><span>Notes</span></div>
-          <a class="btn btn-secondary" href="#contact">Get updates</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Experience</h2>
+      <h2 id="experience-title">Experience</h2>
       <div class="timeline">
         <div class="time-card">
           <div class="time-head">
@@ -166,40 +93,114 @@
             <span class="meta">2024 — Present</span>
           </div>
           <p class="muted">
-            I help SMBs add AI the boring way: map data, define guardrails, ship a tiny pilot, measure,
-            then earn the next feature.
+            Designing retrieval-first assistants for SMBs. Map proprietary data, deploy pgvector pipelines,
+            and wrap workflows with lightweight governance, evaluation, and analytics.
           </p>
         </div>
-
         <div class="time-card">
           <div class="time-head">
-            <strong>Sr. DevOps Engineer — Cisco</strong>
+            <strong>Senior DevOps Engineer — Cisco</strong>
             <span class="meta">2023 — 2024</span>
           </div>
-          <p class="muted">Compliance automation across AWS/GCP; owned CI/CD; made audits less dramatic.</p>
+          <p class="muted">
+            Built compliance automation across AWS and GCP, owned CI/CD modernization, and reduced audit
+            prep from weeks to days with scripted evidence collection.
+          </p>
         </div>
-
         <div class="time-card">
           <div class="time-head">
-            <strong>Sr. Release Engineer — Gradient AI</strong>
+            <strong>Senior Release Engineer — Gradient AI</strong>
             <span class="meta">2022 — 2023</span>
           </div>
-          <p class="muted">Automated backups with Lambda; rolled in SonarQube; tightened identity with Okta/Keycloak.</p>
+          <p class="muted">
+            Automated disaster recovery playbooks, introduced SonarQube quality gates, and tightened identity
+            management via Okta and Keycloak integrations.
+          </p>
+        </div>
+        <div class="time-card">
+          <div class="time-head">
+            <strong>DevOps &amp; Release Roles</strong>
+            <span class="meta">2010 — 2022</span>
+          </div>
+          <p class="muted">
+            Led build and deployment pipelines across startups and enterprises, mentoring teams on release
+            strategy, observability, and secure delivery.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section alt">
+  <section id="projects" class="section alt" aria-labelledby="projects-title">
+    <div class="container">
+      <h2 id="projects-title">Selected projects</h2>
+      <div class="grid-3">
+        <article class="card project-card">
+          <div class="project-media" aria-hidden="true">
+            <span>Scenario toggles for RAG</span>
+          </div>
+          <div class="card-head">
+            <h3>RAG vs Simple</h3>
+          </div>
+          <p>
+            Comparative playground to evaluate plain LLM chat versus retrieval-augmented chat over domain
+            knowledge. Includes eval harness, confidence scoring, and OpenAI/Ollama providers.
+          </p>
+          <div class="project-meta">
+            <span><strong>Role:</strong> Product &amp; platform</span>
+            <span><strong>Stack:</strong> FastAPI, Streamlit, pgvector, Docker</span>
+          </div>
+          <a class="btn btn-secondary" target="_blank" rel="noreferrer" href="https://github.com/anjumyaseen/rag-vs-simple">GitHub repository</a>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-media" aria-hidden="true">
+            <span>Encrypted vault</span>
+          </div>
+          <div class="card-head">
+            <h3>Password Safe</h3>
+          </div>
+          <p>
+            Local-first credential manager with AES-GCM encryption, portable desktop bundling, and offline-only
+            storage so small teams can secure secrets without SaaS overhead.
+          </p>
+          <div class="project-meta">
+            <span><strong>Role:</strong> Lead engineer</span>
+            <span><strong>Stack:</strong> Python, PyQt, SQLite, PyInstaller</span>
+          </div>
+          <a class="btn btn-secondary" target="_blank" rel="noreferrer" href="https://github.com/anjumyaseen/password_safe">GitHub repository</a>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-media" aria-hidden="true">
+            <span>Invoice nudges</span>
+          </div>
+          <div class="card-head">
+            <h3>Invoice Reminder</h3>
+          </div>
+          <p>
+            Multi-tenant workflow that tracks outstanding invoices, schedules polite follow-ups, and shares a
+            clear dashboard for founders to monitor cashflow confidence week to week.
+          </p>
+          <div class="project-meta">
+            <span><strong>Role:</strong> Product &amp; delivery</span>
+            <span><strong>Stack:</strong> React, Node.js, PostgreSQL, AWS</span>
+          </div>
+          <a class="btn btn-secondary" target="_blank" rel="noreferrer" href="https://app.fawzixai.com">Visit live app</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" aria-labelledby="contact-title">
     <div class="container contact">
       <div>
-        <h2>Get in touch</h2>
-        <p class="muted">Quickest reply via email. Happy to chat about small pilots and tidy automations.</p>
+        <h2 id="contact-title">Let’s collaborate</h2>
+        <p class="muted">Best way to reach me is email. I’m open to fractional leadership, advisory projects, and hands-on builds.</p>
         <div class="contact-links">
-          <a class="btn btn-primary" href="mailto:anjumyaseen@yahoo.com">Email me</a>
-          <a class="btn btn-ghost" target="_blank" href="https://github.com/anjumyaseen">GitHub</a>
-          <a class="btn btn-ghost" target="_blank" href="https://www.linkedin.com/in/anjum-yaseen-85213820/">LinkedIn</a>
+          <a class="btn btn-primary" href="mailto:anjumyaseen@yahoo.com">anjumyaseen@yahoo.com</a>
+          <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://github.com/anjumyaseen">GitHub</a>
+          <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anjum-yaseen-85213820/">LinkedIn</a>
         </div>
       </div>
       <div class="contact-card card">
@@ -208,18 +209,17 @@
           <div class="mini-item">Cary, NC</div>
         </div>
         <div class="mini">
-          <div class="mini-title">Focus</div>
-          <div class="mini-item">RAG • Agents • DevOps</div>
+          <div class="mini-title">Focus areas</div>
+          <div class="mini-item">Retrieval systems · Automation · Observability</div>
         </div>
         <div class="mini">
-          <div class="mini-title">Stack</div>
-          <div class="mini-item">Python · FastAPI · Postgres · Docker</div>
+          <div class="mini-title">Current availability</div>
+          <div class="mini-item">Consulting (10–15 hrs/week)</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-wrap">
       <small>© <span id="year"></span> Anjum Yaseen</small>
