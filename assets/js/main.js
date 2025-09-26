@@ -4,6 +4,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // Theme toggle with local persistence
 (function () {
   const storageKey = 'ay-theme';
+  const root = document.documentElement;
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
   const toggle = document.getElementById('theme-toggle');
   const icon = toggle ? toggle.querySelector('.theme-toggle-icon') : null;
@@ -26,7 +27,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
   };
 
   const applyTheme = (theme) => {
-    document.body.setAttribute('data-theme', theme);
+    root.setAttribute('data-theme', theme);
     if (toggle) {
       const isDark = theme === 'dark';
       toggle.setAttribute('aria-pressed', String(isDark));
@@ -49,7 +50,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
   if (!toggle) return;
 
   toggle.addEventListener('click', () => {
-    const next = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     applyTheme(next);
     safeSet(next);
   });
