@@ -162,7 +162,7 @@ img {
 }
 
 .intro .display {
-  font-size: clamp(36px, 5vw, 56px);
+  font-size: clamp(32px, 4vw, 44px);
   letter-spacing: -0.02em;
   margin-bottom: 18px;
 }
@@ -178,7 +178,7 @@ img {
   margin: 0 0 30px;
   display: grid;
   gap: 10px;
-  font-size: 15px;
+  font-size: 18px;
   color: rgba(15, 29, 64, 0.7);
 }
 
